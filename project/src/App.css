@@ -1,42 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.container {
+  max-width: 1440px;
+  padding: 0 40px;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.calculate {
+  padding: 60px 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+body {
+  font-family: "Nunito Sans";
+  background: var(--BG, #F5F7FA);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.calculate__title {
+  color: var(---800, #282727);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 124%; /* 49.6px */
+  text-transform: uppercase;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculate__subtitle {
+  margin-top: 8px;
+  color: var(---700, #3f3f3e);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%; /* 24.3px */
+  text-transform: uppercase;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.calculate__wrapper{
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
 }
