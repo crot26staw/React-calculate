@@ -4,4 +4,302 @@
   background: #fff;
   width: 440px;
   flex-shrink: 0;
+  height: fit-content;
+}
+.cacl__label {
+  padding: 12px;
+  border-radius: 16px;
+  background: #f5f7fa;
+  position: relative;
+}
+
+.cacl__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cacl__label-name {
+  color: var(---700, #3f3f3e);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+.cacl__label-value {
+  margin-top: 2px;
+  color: var(---800, #282727);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%; /* 24.3px */
+}
+
+.cacl__label-percent {
+  color: var(--300, #a3a4a6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.calc__price {
+  position: absolute;
+  bottom: 0;
+  left: 14px;
+  width: 93%;
+}
+
+:where(.css-dev-only-do-not-override-4g8p5x).ant-slider
+  .ant-slider-handle::after {
+  background: #c0a58c;
+}
+:where(.css-dev-only-do-not-override-4g8p5x).ant-slider
+  .ant-slider-handle::after {
+  box-shadow: 0 0 0 2px #c0a58c;
+}
+:where(.css-dev-only-do-not-override-1udpaew).ant-slider:hover
+  .ant-slider-handle::after {
+  box-shadow: 0 0 0 2px #c0a58c;
+}
+:where(.css-dev-only-do-not-override-1udpaew).ant-slider
+  .ant-slider-handle::after {
+  background: #c0a58c;
+}
+:where(.css-dev-only-do-not-override-1udpaew).ant-slider
+  .ant-slider-handle:hover::before,
+:where(.css-dev-only-do-not-override-1udpaew).ant-slider
+  .ant-slider-handle:active::before,
+:where(.css-dev-only-do-not-override-1udpaew).ant-slider
+  .ant-slider-handle:focus::before {
+  width: 14px;
+  height: 14px;
+  inset-inline-start: 0;
+  inset-block-start: 0;
+}
+:where(.css-dev-only-do-not-override-1udpaew).ant-slider-horizontal {
+  height: auto;
+}
+:where(.css-dev-only-do-not-override-1udpaew).ant-slider {
+  margin: 0;
+}
+
+.cacl__label-lists {
+  margin-top: 16px;
+  display: flex;
+  gap: 4px;
+}
+
+.cacl__label-li {
+  cursor: pointer;
+  padding: 7px 10px;
+  color: var(--300, #a3a4a6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  border-radius: 90px;
+  border: 1px solid #dfdfdf;
+}
+
+.cacl__credit-wrapper {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc__credit-title {
+  color: var(---700, #3f3f3e);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 21.6px */
+}
+
+.calc__credit-value {
+  color: var(---700, #3f3f3e);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%; /* 32.4px */
+  text-transform: uppercase;
+}
+
+.cacl__bank-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cacl__bank-li label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cacl__bank-li .cacl__label-value {
+  cursor: pointer;
+  user-select: none;
+}
+
+.cacl__bank-check-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.cacl__bank-check-input-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #a3a4a6;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.cacl__bank-check-input-label::before {
+  content: "";
+  width: 5px;
+  height: 11px;
+  display: block;
+  border-bottom: 2px solid #f5f7fa;
+  border-right: 2px solid #f5f7fa;
+  transform: rotate(45deg);
+  margin-bottom: 3px;
+}
+
+.cacl__bank-check-input:checked + .cacl__bank-check-input-label{
+  background: #C0A58C;
+  border-color: #C0A58C;
+}
+
+.cacl__bank-check-input:checked + .cacl__bank-check-input-label::before {
+  border-color: white;
+}
+
+.calc__btn {
+  margin-top: 24px;
+  width: 100%;
+  cursor: pointer;
+  padding: 18px 24px;
+  border-radius: 90px;
+  background: #282727;
+  border: 1px solid #282727;
+  color: #fff;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.calc__btn:hover {
+  color: #3f3f3e;
+  background: white;
+  border-color: #3f3f3e;
+}
+
+.cacl__capital label {
+  display: flex;
+  align-items: center;
+}
+
+.cacl__capital-title {
+  color: var(---700, #3f3f3e);
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  margin-left: 12px;
+}
+
+.cacl__capital {
+  margin-top: 24px;
+  position: relative;
+}
+
+.cacl__capital-check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.cacl__capital-custom {
+  width: 38px;
+  padding: 2px;
+  background: #ebebeb;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+.cacl__capital-custom span {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+}
+
+.cacl__capital-check:checked + .cacl__capital-custom {
+  justify-content: flex-end;
+  background: #c0a58c;
+}
+
+@media (width < 1024px) {
+  .cacl {
+    width: 100%;
+  }
+  .calc__price {
+    width: 95%;
+  }
+}
+@media (width < 768px) {
+  .cacl {
+    border-radius: 24px;
+  }
+  .cacl__item{
+    gap: 20px;
+  }
+  .cacl__label-name {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 16.2px */
+  }
+  .cacl__label-value {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%;
+  }
+  .cacl__label-lists{
+    flex-wrap: wrap;
+  }
+  .cacl__capital{
+    margin-top: 20px;
+  }
+
+  .cacl__credit-wrapper{
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .calc__btn{
+    margin-top: 20px;
+  }
+
+
 }

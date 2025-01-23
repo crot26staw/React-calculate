@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 40px;
@@ -7,7 +16,7 @@
 }
 body {
   font-family: "Nunito Sans";
-  background: var(--BG, #F5F7FA);
+  background: var(--BG, #f5f7fa);
 }
 .calculate__title {
   color: var(---800, #282727);
@@ -26,8 +35,41 @@ body {
   line-height: 135%; /* 24.3px */
   text-transform: uppercase;
 }
-.calculate__wrapper{
+.calculate__wrapper {
   margin-top: 32px;
   display: flex;
   gap: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (width < 1024px) {
+  .calculate__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (width < 768px) {
+  .container {
+    padding: 0px 20px;
+  }
+  .calculate__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%; /* 32.4px */
+    text-transform: uppercase;
+  }
+  .calculate__subtitle {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%; /* 16.2px */
+    text-transform: uppercase;
+  }
+  .calculate__wrapper{
+    margin-top: 24px;
+  }
 }
